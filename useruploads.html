@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="user.css">
+    <style>
+        .file-input {
+            display: none;
+        }
+        .custom-button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .custom-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <title>Imágenes Cargadas</title>
+</head>
+<body>
+    <h2 style="text-align:center;">Subir fondos de Pantalla</h2>
+    <!-- Formulario de carga de archivos -->
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <label for="image">Selecciona una imagen:</label>
+        <input type="file" name="image" id="image" accept="image/*" class="file-input">
+        <label for="image" class="custom-button">Seleccionar Imagen</label>
+        <input type="submit" value="Subir Imagen" class="custom-button">
+    </form>
+
+    <h2>Imágenes Cargadas por los Usuarios</h2>
+    <div class="image-list">
+        <!-- Aquí se mostrarán las imágenes cargadas por PHP -->
+    </div>
+</body>
+</html>

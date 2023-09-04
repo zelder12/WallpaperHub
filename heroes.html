@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagenes/sex.png" type="image/png">
+    <link rel="stylesheet" href="hero.css">
+    <style>
+        /* Agrega estilos para hacer borrosa la imagen al pasar el cursor sobre ella */
+        .image-link {
+            position: relative;
+            display: inline-block;
+        }
+
+        .image-link img {
+            filter: blur(0); /* Inicialmente sin desenfoque */
+            transition: filter 0.3s;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .image-link .download-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+            background-color: #007bff;
+            color: #fff;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .image-link:hover img {
+            filter: blur(5px); /* Cambia la cantidad de desenfoque según tus preferencias */
+        }
+
+        .image-link:hover .download-button {
+            display: block;
+        }
+        .image-link img {
+    width: 280px; /* Establece un ancho fijo para todas las imágenes */
+    height: 600px; /* Establece una altura fija para todas las imágenes */
+    object-fit: cover; 
+}
+    </style>
+    <title>WallpaperHub</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagenes/fefefe.jpg" alt="Logo de Wallpaper Hub">
+        </div>
+        <h1>Fondos De Super Héroes</h1>
+    </header>
+    
+    <nav class="nav-container">
+        <a href="index.html" class="nav-link">
+            <img src="imagenes/regre.png" alt="Super Héroes">
+        </a>
+    </nav>
+    
+    <main>
+        <h2 style="text-align:center;">Galería de Fondos de Pantalla de Super Héroes</h2>
+        <div class="image-list">
+            <!-- Imagen 1 -->
+            <div class="image-link">
+                <img src="imagenes/hero1.jpg" alt="Imagen 1">
+                <button class="download-button" onclick="downloadImage('imagenes/hero1.jpg')">Descargar</button>
+            </div>
+            
+            <!-- Imagen 2 -->
+            <div class="image-link">
+                <img src="imagenes/hero2.jpg" alt="Imagen 2">
+                <button class="download-button" onclick="downloadImage('imagenes/hero2.jpg')">Descargar</button>
+            </div>
+
+            <!-- Imagen 3 -->
+            <div class="image-link">
+                <img src="imagenes/hero3.jpg" alt="Imagen 3">
+                <button class="download-button" onclick="downloadImage('imagenes/hero3.jpg')">Descargar</button>
+            </div>
+
+            <!-- Imagen 4 -->
+            <div class="image-link">
+                <img src="imagenes/hero4.jpg" alt="Imagen 4">
+                <button class="download-button" onclick="downloadImage('imagenes/hero4.jpg')">Descargar</button>
+            </div>
+
+            <!-- Imagen 5 -->
+            <div class="image-link">
+                <img src="imagenes/hero5.jpg" alt="Imagen 5">
+                <button class="download-button" onclick="downloadImage('imagenes/hero5.jpg')">Descargar</button>
+            </div>
+
+            <!-- Imagen 6 -->
+            <div class="image-link">
+                <img src="imagenes/hero6.png" alt="Imagen 6">
+                <button class="download-button" onclick="downloadImage('imagenes/hero6.png')">Descargar</button>
+            </div>
+
+            <!-- Imagen 7 -->
+            <div class="image-link">
+                <img src="imagenes/hero7.jpg" alt="Imagen 7">
+                <button class="download-button" onclick="downloadImage('imagenes/hero7.jpg')">Descargar</button>
+            </div>
+
+            <!-- Imagen 8 -->
+            <div class="image-link">
+                <img src="imagenes/hero8.jpg" alt="Imagen 8">
+                <button class="download-button" onclick="downloadImage('imagenes/hero8.jpg')">Descargar</button>
+            </div>
+
+            <!-- Imagen 9 -->
+            <div class="image-link">
+                <img src="imagenes/hero9.jpg" alt="Imagen 9">
+                <button class="download-button" onclick="downloadImage('imagenes/hero9.jpg')">Descargar</button>
+            </div>
+
+            <!-- Imagen 10 -->
+            <div class="image-link">
+                <img src="imagenes/hero10.jpg" alt="Imagen 10">
+                <button class="download-button" onclick="downloadImage('imagenes/hero10.jpg')">Descargar</button>
+            </div>
+
+            <!-- Imagen 11 -->
+            <div class="image-link">
+                <img src="imagenes/hero11.jpg" alt="Imagen 11">
+                <button class="download-button" onclick="downloadImage('imagenes/hero11.jpg')">Descargar</button>
+            </div>
+
+            <!-- Imagen 12 -->
+            <div class="image-link">
+                <img src="imagenes/hero12.jpg" alt="Imagen 12">
+                <button class="download-button" onclick="downloadImage('imagenes/hero12.jpg')">Descargar</button>
+            </div>
+
+            <!-- Imagen 13 -->
+            <div class="image-link">
+                <img src="imagenes/hero13.jpg" alt="Imagen 13">
+                <button class="download-button" onclick="downloadImage('imagenes/hero13.jpg')">Descargar</button>
+            </div>
+
+            <!-- Imagen 14 -->
+            <div class="image-link">
+                <img src="imagenes/hero14.jpg" alt="Imagen 14">
+                <button class="download-button" onclick="downloadImage('imagenes/hero14.jpg')">Descargar</button>
+            </div>
+
+            <!-- Imagen 15 -->
+            <div class="image-link">
+                <img src="imagenes/hero15.jpg" alt="Imagen 15">
+                <button class="download-button" onclick="downloadImage('imagenes/hero15.jpg')">Descargar</button>
+            </div>
+
+            <!-- Imagen 16 -->
+            <div class="image-link">
+                <img src="imagenes/hero16.jpg" alt="Imagen 16">
+                <button class="download-button" onclick="downloadImage('imagenes/hero16.jpg')">Descargar</button>
+            </div>
+
+            <!-- Imagen 17 -->
+            <div class="image-link">
+                <img src="imagenes/hero17.jpg" alt="Imagen 17">
+                <button class="download-button" onclick="downloadImage('imagenes/hero17.jpg')">Descargar</button>
+            </div>
+
+            <!-- Imagen 18 -->
+            <div class="image-link">
+                <img src="imagenes/hero18.jpg" alt="Imagen 18">
+                <button class="download-button" onclick="downloadImage('imagenes/hero18.jpg')">Descargar</button>
+            </div>
+
+            <!-- Imagen 19 -->
+            <div class="image-link">
+                <img src="imagenes/hero19.jpg" alt="Imagen 19">
+                <button class="download-button" onclick="downloadImage('imagenes/hero19.jpg')">Descargar</button>
+            </div>
+
+            <!-- Imagen 20 -->
+            <div class="image-link">
+                <img src="imagenes/hero20.jpg" alt="Imagen 20">
+                <button class="download-button" onclick="downloadImage('imagenes/hero20.jpg')">Descargar</button>
+            </div>
+        </div>
+    </main>
+</body>
+<footer>
+    <div class="copyright">
+        &copy; 2023 Los Corazones Bello.inc
+    </div>
+    <div class="contact">
+        Contacto: <a href="mailto:loscorazonbello@gmail.com">loscorazonbello@gmail.com</a>
+    </div>
+    <div class="task">
+        Tarea para: el Tío Ezequiel
+    </div>
+</footer>
+
+<script>
+    // Función para descargar la imagen
+    function downloadImage(imageUrl) {
+        var a = document.createElement('a');
+        a.href = imageUrl;
+        a.download = 'imagen.jpg';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+    }
+</script>
+</html>

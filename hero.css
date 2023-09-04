@@ -1,0 +1,149 @@
+body {
+    background-image: url('imagenes/wallpaperflare.com_wallpaper.jpg'); /* Reemplaza 'ruta_de_la_imagen.jpg' con la ruta de tu imagen */
+    background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-attachment: fixed; /* Mantiene la imagen fija mientras se desplaza la página */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #939393; /* Fondo blanco */
+}
+
+header {
+    background-color: #ffffff; /* Fondo gris */
+    color: #fff;
+    text-align: left; /* Alineación a la izquierda */
+    padding: 20px;
+    display: flex;
+    align-items: left; /* Centrar verticalmente */
+}
+
+.logo img {
+    width: 100px; /* Aumenta el tamaño del logo */
+    height: 100px; /* Aumenta el tamaño del logo */
+}
+
+
+h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #010101; /* Color de texto del título */
+    margin-left: 350px; /* Espacio entre el logo y el título */
+
+}
+h2 {
+    margin-top: 10px; /* Ajusta la cantidad de espacio deseada */
+    font-size: 32px;
+    color: #ffffff; /* Color de texto del título */
+}
+
+
+main {
+    text-align: left;
+}
+
+nav {
+    background-color: #333; /* Fondo gris */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    align-items: left; /* Centrar horizontalmente los elementos */
+    position: relative; /* Agregamos posición relativa */
+}
+
+
+.nav-link img {
+    width: 50px; /* Tamaño predeterminado de la imagen en miniatura */
+    max-width: 50px; /* Establecer el ancho máximo */
+    max-height: 50px; /* Establecer la altura máxima */
+    object-fit: cover;
+    filter: blur(0px); /* Efecto de desenfoque */
+    transition: transform 0.3s, filter 0.3s; /* Agregamos transformación */}
+
+
+/* Estilos para el texto que estará por encima de las imágenes */
+.nav-link span {
+    position: absolute;
+    bottom: 0; /* Posición abajo */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para el texto */
+    padding: 5px 10px; /* Espaciado interno para el texto */
+    color: #fff; /* Color del texto */
+    z-index: 1; /* Aseguramos que el texto esté encima de la imagen */
+    transition: background-color 0.3s;
+}
+
+/* Mostrar el texto y agrandar la imagen al pasar el ratón sobre los enlaces */
+.nav-link:hover img {
+    transform: scale(1.1); /* Aumentar el tamaño de la imagen al 110% */
+    filter: blur(4); /* Quitar el efecto de desenfoque */
+}
+
+/* Ocultar el texto al pasar el ratón fuera de los enlaces */
+.nav-link:not(:hover) span {
+    background-color: rgba(0, 0, 0, 0); /* Hacemos el fondo del texto transparente */
+}
+
+
+/* Mostrar las imágenes al pasar el ratón sobre los enlaces */
+.nav-link img {
+    height: 30px; /* Tamaño original de la imagen */
+    filter: blur(4); /* Quitar el efecto de desenfoque */
+    transition: height 0.3s, filter 0.3s; /* Definir la transición */
+}
+
+.nav-link:hover img {
+    height: 220px; /* Agrandar la imagen verticalmente */
+    filter: blur(0); /* Quitar el efecto de desenfoque */
+}
+
+/* Estilos para la galería de imágenes */
+.image-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas por fila */
+    gap: 20px; /* Espacio entre las imágenes */
+    padding: 20px;
+    justify-content: center;
+}
+
+.image-link {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.image-link img {
+    width: 280px; /* Establece un ancho fijo para todas las imágenes */
+    height: 600px; /* Establece una altura fija para todas las imágenes */
+    object-fit: cover; /* Ajusta el contenido de la imagen para cubrir el tamaño fijo */
+}
+/* Estilos para el pie de página */
+footer {
+    background-color: #333; /* Fondo gris oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 20px 0; /* Espaciado interior superior e inferior */
+    text-align: center; /* Alineación centrada del contenido */
+}
+
+/* Estilos para los elementos del pie de página */
+footer .copyright,
+footer .contact,
+footer .task {
+    margin-bottom: 10px; /* Espaciado entre elementos */
+}
+
+footer .contact a {
+    color: #fff; /* Enlaces de texto blanco */
+    text-decoration: none; /* Quitar subrayado de los enlaces */
+}
+
+footer .contact a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón sobre los enlaces */
+}
+
